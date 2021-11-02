@@ -1,17 +1,17 @@
 from typing import List
 
-def minimum_relocations(A: List[int]) -> int:
+def minimum_relocations(operations: List[int]) -> int:
     expanses = {
         str(index_expanse): value_expanse
-        for index_expanse, value_expanse in enumerate(A)
+        for index_expanse, value_expanse in enumerate(operations)
         if value_expanse < 0
     }
     relocations_number = 0
     index = 0
-    while index < len(A):
-        if sum(A[: index + 1]) < 0 and any(value > 0 for value in A[index + 1 :]):
-            A.append(
-                A.pop(
+    while index < len(operations):
+        if sum(operations[: index + 1]) < 0 and any(value > 0 for value in operations[index + 1 :]):
+            operations.append(
+                operations.pop(
                     min(
                         (
                             int(index_expanse)
