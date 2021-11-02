@@ -26,6 +26,3 @@ def minimum_relocations(A: List[int]) -> int:
         else:
             index += 1
     return relocations_number
-  
-  if __name__ == "__main__":
-    print(minimum_relocations([3, 2, 7, -5, 1, -9, 6, -1, -2, 2]))
