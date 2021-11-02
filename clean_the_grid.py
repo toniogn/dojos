@@ -17,8 +17,8 @@ class Square:
         return f"Square({self.x}, {self.y}, {self.occupied})"
 
 class Robot:
-    def __init__(self, R: List[str]) -> None:
-        self.squares = np.array([[Square(x, y, char == "x") for x, char in enumerate(row)] for y, row in enumerate(R)])
+    def __init__(self, grid: List[str]) -> None:
+        self.squares = np.array([[Square(x, y, char == "x") for x, char in enumerate(row)] for y, row in enumerate(grid)])
         self.square = self.squares[0, 0]
         self.teta = 0
 
