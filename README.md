@@ -4,7 +4,7 @@
 
 This repository is dedicated to dojos, each python file correspond to my solution for each dojos.
 
-## Clean the grid
+## Clean the grid (≈1h)
 
 The aim of this dojo is to count the number of different squares of a given grid that a robot can clean. The squares could be occupied by an obstacle. Once the robot meets a grid border or an obstacle it can only turn 90° right. The robot initial position is at the top left square of the grid, which isn't cleaned yet, looking to the right.
 
