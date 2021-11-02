@@ -64,32 +64,57 @@ class Robot:
         self.teta = 0
 
     def __get_next_coordinates(self) -> Tuple[int, int]:
+        """Gets the coordinates of the next square in the current robot's direction.
+        
+        Returns
+        -------
+        Tuple[int, int]
+            x and y coordinates of the next square.
+        """
         return int(self.square.x + np.cos(self.teta)), int(self.square.y + np.sin(self.teta))
 
-    def get_next_square_forward(self) -> Square:
+    def get_next_square(self) -> Square:
+        """Get the next square where the robot goes.
+        
+        Determines rather the next forward square is reachable or not. If not turns right and try again.
+        
+        Returns
+        -------
+        Square
+            The new robot's current square.
+        """
         next_x, next_y = self.__get_next_coordinates()
+        if next_x < 0 or next_y < 0:
+            self.teta += np.pi / 2
+            next_square = self.get_next_square()
         try:
             next_square = self.squares[next_y, next_x]
         except IndexError:
             self.teta += np.pi / 2
-            next_square = self.get_next_square_forward()
-        else:
-            if next_x < 0 or next_y < 0:
-                self.teta += np.pi / 2
-                next_square = self.get_next_square_forward()
+            next_square = self.get_next_square()
         if next_square.occupied:
             self.teta += np.pi / 2
-            next_square = self.get_next_square_forward()
+            next_square = self.get_next_square()
         return next_square
 
-    def clean(self):
+    def clean(self) -> None:
+        """Operates the robot to clean the grid.
+        
+        While the robot isn't twice on the same square in the same direction, it find the next square to go and clean. 
+        """
         while not (
             self.square.cleaned
             and any(int(np.sin(self.teta)) == int(np.sin(teta)) for teta in self.square.tetas)
         ):  
-            print(self.square, np.sin(self.teta), [np.sin(teta) for teta in self.square.tetas])
             self.square.clean(self.teta)
-            self.square = self.get_next_square_forward()
+            self.square = self.get_next_square()
 
-    def count(self):
+    def count(self) -> int:
+        """Counts the number of cleaned squares.
+        
+        Returns
+        -------
+        int
+            The number of grid's cleaned squares.
+        """
         return sum([square.cleaned for row in self.squares for square in row])
