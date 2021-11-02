@@ -1,6 +1,18 @@
 from typing import List
 
 def minimum_relocations(operations: List[int]) -> int:
+    """Determines the minimum negative values relocation number to the end of a list to ensure positive accumulation.
+    
+    Parameters
+    ----------
+    operations : List[int]
+        Chronological list of operations.
+    
+    Returns
+    -------
+    relocations_number : int
+        Minimum number of expanses to relocate.
+    """
     expanses = {
         str(index_expanse): value_expanse
         for index_expanse, value_expanse in enumerate(operations)
