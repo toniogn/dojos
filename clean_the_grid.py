@@ -93,8 +93,3 @@ class Robot:
 
     def count(self):
         return sum([square.cleaned for row in self.squares for square in row])
-
-if __name__ == "__main__":
-    a = Robot(["......", "....xx", "......"])
-    a.clean()
-    print(a.count())
