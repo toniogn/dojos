@@ -1,5 +1,3 @@
-from typing import List
-
 def minimum_relocations(operations: List[int]) -> int:
     """Determines the minimum negative values relocation number to the end of a list to ensure positive accumulation.
     
@@ -16,7 +14,7 @@ def minimum_relocations(operations: List[int]) -> int:
     relocations_number = 0
     index = 0
     while index < len(operations):
-        if sum(operations[: index + 1]) < 0 and any(value > 0 for value in operations[index + 1 :]):
+        if sum(operations[:index + 1]) < 0:
             relocate(operations, index)
             relocations_number += 1
         else:
