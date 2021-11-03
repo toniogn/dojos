@@ -4,7 +4,7 @@
 
 This repository is dedicated to dojos. To each dojo correspond two python files, a template for writing solution with integrated tests and my solution.
 
-## Avoid credit (≈20min)
+## Avoid credit (≈20min): about list
 
 The aim of this dojo is to ensure your bank account to never be in credit delaying a minimum of expanses. Knowing the chronological list of expanses (negative values) and incomes (positive values) you have, find the minimum expanses relocation number you should do to never be in credit (i.e. the accumulated amount of expanses and incomes is always positive or zero). You can only relocate expanses and only to the end of the chronological list.
 
