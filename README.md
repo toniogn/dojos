@@ -20,7 +20,7 @@ In the flow of opérations when the -9 operation occurs, the accumulated sum goe
 result = 1
 ```
 
-## Clean the grid (≈1h): logic empowered by object-oriented
+## Clean the grid (≈1h): logic object-oriented empowered
 
 The aim of this dojo is to count the number of different squares of a given grid that a robot can clean. The squares could be occupied by an obstacle. Once the robot meets a grid border or an obstacle it can only turn 90° right. The robot initial position is at the top left square of the grid, which isn't cleaned yet, looking to the right.
 
