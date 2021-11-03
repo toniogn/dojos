@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository is dedicated to dojos, each python file correspond to my solution for each dojos.
+This repository is dedicated to dojos, each python file correspond to my solution to each problem.
 
 ## Avoid credit (≈20min)
 
