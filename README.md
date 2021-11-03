@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository is dedicated to dojos, each python file correspond to my solution to each problem.
+This repository is dedicated to dojos. To each dojo correspond two python files, a template for writing solution with integrated tests and my solution.
 
 ## Avoid credit (≈20min)
 
@@ -20,7 +20,7 @@ In the flow of opérations when the -9 operation occurs, the accumulated sum goe
 result = 1
 ```
 
-## Clean the grid (≈1h)
+## Clean the grid (≈1h): logic empowered by object-oriented
 
 The aim of this dojo is to count the number of different squares of a given grid that a robot can clean. The squares could be occupied by an obstacle. Once the robot meets a grid border or an obstacle it can only turn 90° right. The robot initial position is at the top left square of the grid, which isn't cleaned yet, looking to the right.
 
