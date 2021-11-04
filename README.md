@@ -40,7 +40,7 @@ The robot cleans the 6 top squares, reaches the right border, tries to turn righ
 result = 6
 ```
 
-## :anchor: Climb the lighthouse (≈15min): recursivity
+## :anchor: Climb the lighthouse (≈10min): recursivity
 
 This dojo challenge you to find the exact number of different paths to climb a lighthouse stairway. The only rule is that you can climb either one or two steps and you begin right before the first step and you finish on the last one.
 
