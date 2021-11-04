@@ -4,7 +4,7 @@
 
 This repository is dedicated to dojos. To each dojo correspond two python files, a template for writing solution with integrated tests and my solution.
 
-## :broom: Avoid credit (≈20min): about list
+## :moneybag: Avoid credit (≈20min): about list
 
 The aim of this dojo is to ensure your bank account to never be in credit delaying a minimum of expanses. Knowing the chronological list of expanses (negative values) and incomes (positive values) you have, find the minimum expanses relocation number you should do to never be in credit (i.e. the accumulated amount of expanses and incomes is always positive or zero). You can only relocate expanses and only to the end of the chronological list.
 
@@ -20,7 +20,7 @@ In the flow of opérations when the -9 operation occurs, the accumulated sum goe
 result = 1
 ```
 
-## :moneybag: Clean the room (≈1h): logic object-oriented empowered
+## :broom: Clean the room (≈1h): logic object-oriented empowered
 
 The aim of this dojo is to count the number of different squares of a given grid that a robot can clean. The squares could be occupied by an obstacle. Once the robot meets a grid border or an obstacle it can only turn 90° right. The robot initial position is at the top left square of the grid, which isn't cleaned yet, looking to the right.
 
