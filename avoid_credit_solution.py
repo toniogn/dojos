@@ -1,15 +1,15 @@
 def minimum_relocations(operations: List[int]) -> int:
-    """Determines the minimum negative values relocation number to the end of a list to ensure positive accumulation.
-    
+    """Count the minimum expanses relocations number from a chronological operations list.
+
     Parameters
     ----------
     operations : List[int]
-        Chronological list of operations.
-    
+    List of operations (negative expanses and positive incomes) that sums up to a positive or zero value.
+
     Returns
     -------
-    relocations_number : int
-        Minimum number of expanses to relocate.
+    int
+    Minimum number of expanses relocations to the end of the operations list to realize to ensure positivity of every accumulated sums.
     """
     relocations_number = 0
     index = 0
@@ -20,6 +20,7 @@ def minimum_relocations(operations: List[int]) -> int:
         else:
             index += 1
     return relocations_number
+
 
 def relocate(operations: List[int], index: int) -> None:
     """Relocate the biggest expanse at the end of the operations list.
