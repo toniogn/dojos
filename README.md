@@ -39,3 +39,19 @@ The robot cleans the 6 top squares, reaches the right border, tries to turn righ
 ```python
 result = 6
 ```
+
+## Climb the lighthouse (≈15min): recursivity
+
+This dojo challenge you to find the exact number of different paths to climb a lighthouse stairway. The only rule is that you can climb either one or two steps and you begin right before the first step and you finish on the last one.
+
+### Example
+
+```python
+stairs_number = 3
+```
+
+With three steps you can climb each steps one by one, you can do #1 then #3 and you can do #2 then #3.
+
+```python
+results = 3
+```
