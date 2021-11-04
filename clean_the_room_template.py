@@ -1,6 +1,6 @@
 from typing import List
 
-def clean_the_grid(grid: List[str]) -> int:
+def clean_the_room(grid: List[str]) -> int:
   pass
 
 if __name__ == "__main__":
@@ -17,5 +17,5 @@ if __name__ == "__main__":
     ".....................................................................",
     ".....................................................................",
   ]
-  assert clean_the_grid(grid) == len(grid) * 2 + (len(grid[0]) - 2) * 2
+  assert clean_the_room(grid) == len(grid) * 2 + (len(grid[0]) - 2) * 2
     
