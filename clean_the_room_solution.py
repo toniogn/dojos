@@ -118,8 +118,21 @@ class Robot:
             The number of grid's cleaned squares.
         """
         return sum([square.cleaned for row in self.squares for square in row])
+
     
-def clean_the_room(grid: List[str]) -> int
+def cleanable_squares_number(grid: List[str]) -> int:
+    """Count the number of cleanable squares of a given grid.
+
+    Parameters
+    ----------
+    grid : List[str]
+    Grid containing empty (".") or occupied squares ("x").
+
+    Returns
+    -------
+    int
+    Number of cleanable squares.
+    """
     robot = Robot(grid)
     robot.clean()
     return robot.count()
