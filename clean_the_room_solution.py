@@ -119,7 +119,7 @@ class Robot:
         """
         return sum([square.cleaned for row in self.squares for square in row])
     
-def clean_the_grid(grid: List[str]) -> int
+def clean_the_room(grid: List[str]) -> int
     robot = Robot(grid)
     robot.clean()
     return robot.count()
